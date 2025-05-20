@@ -1,38 +1,168 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KandleKings™ - Rules of Entry</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KandleKings&trade; | Mark it. Post it. Crown up.</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="description" content="The official site of KandleKings™ — the game where traders compete by locking in trades with precision. Mark it. Post it. Crown up." />
+  <meta property="og:title" content="KandleKings™" />
+  <meta property="og:description" content="Mark it. Post it. Crown up." />
+  <meta property="og:image" content="https://cdn.openai.com/chat-assets/kandlekings-logo.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="KandleKings™" />
+  <meta name="twitter:description" content="Mark it. Post it. Crown up." />
+  <meta name="twitter:image" content="https://cdn.openai.com/chat-assets/kandlekings-logo.png" />
+  <link rel="icon" type="image/png" href="https://cdn.openai.com/chat-assets/kandlekings-logo.png" />
+  <style>
+    body {
+      background: radial-gradient(ellipse at top, #0f172a 0%, #020617 100%);
+    }
+    .king-gradient {
+      background: linear-gradient(to right, #facc15, #f59e0b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
-<body>
-  <h1>KandleKings™</h1>
-  <h2>Welcome, Noble Traders</h2>
-  <p>
-    You stand at the threshold of glory.<br>
-    Use the <strong>TradingView Long/Short Position Widget</strong> to mark your plays.<br>
-    Post screenshots with entry, stop, and target before the move.<br>
-    The Kingsboard shall remember.
-  </p>
+<body class="text-white font-sans">
+  <!-- Hero -->
+  <section class="text-center py-20 px-6">
+    <img src="/images/kandlekings-logo.png" alt="KandleKings Logo" class="mx-auto w-48 mb-6">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight">
+      <span class="king-gradient">KandleKings&trade;</span>
+    </h1>
+    <p class="mt-4 text-lg text-gray-300">Mark it. Post it. Crown up.</p>
+    <a href="#how" class="mt-8 inline-block px-6 py-3 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-400">How to Play</a>
+  </section>
 
-  <h2>How to Enter</h2>
-  <ol>
-    <li>Pick a crypto asset</li>
-    <li>Use the <code>Long Position</code> or <code>Short Position</code> widget</li>
-    <li>Mark Entry, TP, and SL</li>
-    <li>Screenshot it clearly</li>
-    <li>Post with your Twitter/X handle and #KandleKingsEntry</li>
-  </ol>
+  <!-- How It Works -->
 
-  <h2>Rules of the Realm</h2>
-  <ul>
-    <li>No editing after the fact — you post it, you own it</li>
-    <li>No backdating — if your TP already hit, you’re too late</li>
-    <li>Context is honored — say why you entered</li>
-  </ul>
+  <!-- Strategy & Mechanics -->
+  <section id="mechanics" class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-6">Strategy & Mechanics</h2>
+    <div class="space-y-6 text-gray-300">
+      <div>
+        <h3 class="text-xl font-semibold">🧠 Game Rules / Rule v6</h3>
+        <p>Trades are not valid unless price <strong>touches the exact entry</strong>. TP and SL logic is <strong>disabled</strong> until the entry is confirmed. Crowns are only earned or lost <strong>after entry</strong> is triggered.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">↕️ Directional Logic</h3>
+        <p><strong>Longs:</strong> price must move <em>up through</em> entry. <strong>Shorts:</strong> price must break <em>down through</em> entry. Entry is confirmed with a 👑 crown marker.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold">📖 Version History</h3>
+        <ul class="list-disc list-inside">
+          <li>v6 (current): “No Entry, No Crown” enforced</li>
+          <li>v7 (planned): Multi-entry logic and break-even stop rules</li>
+          <li>v1–v5: Archived in the Sticker Lore section</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <p>Long live the wick. Long live the crown.</p>
+  <!-- Scoring & Gamification -->
+  <section id="scoring" class="bg-gray-900 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Scoring & Gamification</h2>
+      <div class="space-y-6 text-gray-300">
+        <div>
+          <h3 class="text-xl font-semibold">🌟 Crown Scoring</h3>
+          <ul class="list-disc list-inside">
+            <li>TP hit = +1 Crown</li>
+            <li>SL hit = -1 Crown</li>
+            <li>No entry = 0 (invalid round)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">🌝 Badges & Achievements</h3>
+          <ul class="list-disc list-inside">
+            <li><strong>Bounce Back:</strong> SL followed by TP</li>
+            <li><strong>Uncrowned King:</strong> 3 no-entry rounds</li>
+            <li><strong>Death by Wick:</strong> SL tagged by a single pip</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">🔢 Score Tracker</h3>
+          <p>Track your rounds manually or export to .json. Future support for auto-sync and leaderboard integration planned.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community & Culture -->
+  <section id="community" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Community & Culture</h2>
+      <div class="space-y-6 text-gray-300">
+        <div>
+          <h3 class="text-xl font-semibold">🐦 #KandleKings on X</h3>
+          <p>Live feed or curated reposts from the community using <code>#KandleKings</code>. Real traders, real results.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">🏰 Founding Story</h3>
+          <p>The tale of the King Kandle, the Widget Wars, and how Version 6 was forged in the fires of CT volatility.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">📜 Manifesto</h3>
+          <p>A pledge to precision, meme honor, and public accountability. KandleKings™ isn’t just a game — it’s a statement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technicals & Charting -->
+  <section id="technical" class="bg-gray-900 py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Technicals & Charting</h2>
+      <div class="space-y-6 text-gray-300">
+        <div>
+          <h3 class="text-xl font-semibold">🛠️ Widget Setup Guide</h3>
+          <p>Drop a Long/Short widget on TradingView. Configure SL/TP, lock it, and screenshot your submission.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">🧾 Pine Script Overlay</h3>
+          <p>Install the official KandleKings™ Pine Script v6 overlay to track entry events and validate rounds in real time.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold">📚 Charting Resources</h3>
+          <ul class="list-disc list-inside">
+            <li>Volume Profile (cone structure)</li>
+            <li>MACD histogram patterns</li>
+            <li>Anchored VWAP entries</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="max-w-4xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold mb-6">How It Works</h2>
+    <ul class="space-y-4 text-gray-300">
+      <li><strong>1. Drop the widget:</strong> Long or short with TP and SL.</li>
+      <li><strong>2. Lock your chart:</strong> No edits allowed after submission.</li>
+      <li><strong>3. Tag your round:</strong> Use #KandleKings and post to X.</li>
+      <li><strong>4. Track the outcome:</strong> Hit TP? You're crowned. SL? You got rekt.</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Placeholder -->
+  <section id="gallery" class="bg-gray-900 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Sticker Pack</h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="/images/tp-hit.png" alt="TP Hit Sticker" class="rounded shadow">
+        <img src="/images/sld-hard.png" alt="SL'D HARD Sticker" class="rounded shadow">
+        <img src="/images/king-crowned.png" alt="KING CROWNED Sticker" class="rounded shadow">
+        <!-- Add more as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-10">
+    &copy; 2025 KandleKings&trade;. All Rights Reserved.
+  </footer>
 </body>
 </html>
