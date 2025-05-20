@@ -1,2 +1,14 @@
-# KandleKingsSite
-Official website for KandleKings™ — the competitive trading game where entries are locked, targets are crowned, and stop losses are punished. Mark it. Post it. Crown up.
+# KandleKings™ Website
+
+The official site for **KandleKings™** — a meme-fueled trading game built on precision entries, flex-worthy take profits, and public humiliation for getting stopped out.
+
+> Mark it. Post it. Crown up.
+
+## 🧱 What's Here
+- TailwindCSS-powered site
+- Branding: KandleKings™ logo, tagline, sticker pack
+- Rules & gameplay for community submission
+- Prepped for GitHub Pages deployment
+
+## ⚖️ License
+Licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). No forks, no commercial use, no derivative projects. Period.
