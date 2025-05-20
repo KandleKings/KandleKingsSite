@@ -1,3 +1,5 @@
+![KandleKings Logo](images/kandlekings-logo.png)
+
 # KandleKings™ Website
 
 The official site for **KandleKings™** — a meme-fueled trading game built on precision entries, flex-worthy take profits, and public humiliation for getting stopped out.
